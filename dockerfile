@@ -1,18 +1,18 @@
 #specify the base image you want to use
-FROM python3:3.9-alpine
+FROM python:3.9-alpine
 
 #Install any required dependencies for your Django application. 
 #For example, you can install Django and any other required packages using pip:
-RUN pip3 install Django
-RUN pip3 install requests
+RUN pip install Django
+RUN pip install requests
 
 #Copy your Django code into the Docker image.
 #Copy the entire project directory into the image:
-COPY . /furniture
+COPY . /furniture_app
 
 
 #Set the working directory for the Docker image to the root directory of your Django project:
-WORKDIR /furniture
+WORKDIR /furniture_app
 
 
 #Expose the port that your Django application will be running on.
@@ -21,4 +21,4 @@ EXPOSE 8001
 
 #Specify the command that will start your Django application.
 #For example, you can start the Django development server:
-CMD ["python3", "manage.py", "runserver", "0.0.0.0:8001"]
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8001"]
