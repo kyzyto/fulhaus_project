@@ -71,5 +71,5 @@ docker build -t furniture .
 
 ### How to run the Docker
 ```bash
-docker run -p 8001:8000 furniture
+docker run -p 8001:8001 furniture
 ```
