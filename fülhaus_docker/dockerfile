@@ -1,0 +1,24 @@
+#specify the base image you want to use
+FROM python3:latest
+
+#Install any required dependencies for your Django application. 
+#For example, you can install Django and any other required packages using pip:
+RUN pip3 install Django
+RUN pip3 install requests
+
+#Copy your Django code into the Docker image.
+#Copy the entire project directory into the image:
+COPY . /furniture
+
+
+#Set the working directory for the Docker image to the root directory of your Django project:
+WORKDIR /furniture
+
+
+#Expose the port that your Django application will be running on.
+#For example, you can expose port 8000:
+EXPOSE 8001
+
+#Specify the command that will start your Django application.
+#For example, you can start the Django development server:
+CMD ["python3", "manage.py", "runserver", "0.0.0.0:8001"]
