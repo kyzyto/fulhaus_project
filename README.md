@@ -9,14 +9,15 @@ This is a Django-based API that allows you to send an image file to a remote ser
 4. install django
 5. Setup your IDE: Pycharm, VS Code, etc.
 6. Run API
-7. Testv using ARC
+7. Test using ARC(Advance REST Client)
 8. Containerize and test.
 
 ## Installation
 Clone this repository to your local machine, see the document attached seperately via email for the apikey and apisecret and replace the placehold in the "/furniture/furniture/fulhaus_predict/views.py" module.
 
-** Create a virtual environment using a tool such as virtualenv or conda.**
-## Install the required Python packages using pip install:
+**Create a virtual environment using a tool such as virtualenv or conda.**
+
+**Install the required Python packages using pip install:**
 1. pip3 install django
 2. pip3 install requests
 
@@ -64,7 +65,11 @@ The API will return a JSON response containing the predicted label name, like th
 }
 ```
 ### How to build the Docker
+```bash
 docker build -t furniture .
+```
 
 ### How to run the Docker
+```bash
 docker run -p 8001:8000 furniture
+```
