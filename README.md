@@ -9,7 +9,7 @@ This is a Django-based API that allows you to send an image file to a remote ser
 4. install django
 5. Setup your IDE: Pycharm, VS Code, etc.
 6. Run API
-7. Test using ARC(Advance REST Client)
+7. Test using ARC(Advanced REST Client)
 8. Containerize and test.
 
 ## Installation
