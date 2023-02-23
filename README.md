@@ -1,5 +1,5 @@
 # Fulhaus Predict API
-This is a Django-based API that allows you to send an image file to a remote server for prediction using a deep learning model. The server can be accessed through a RESTful API that accepts image files via a POST request and returns a prediction in JSON format.
+This is a Django-based API that allows you to send an image file to a remote server for prediction using a deep learning model. The server can be accessed through a ```RESTful API``` that accepts image files via a ```POST request``` and returns a prediction in JSON format.
 
 
 ## Steps
