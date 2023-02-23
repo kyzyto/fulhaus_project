@@ -1,5 +1,5 @@
 #specify the base image you want to use
-FROM python3:latest
+FROM python3:3.9-alpine
 
 #Install any required dependencies for your Django application. 
 #For example, you can install Django and any other required packages using pip:
