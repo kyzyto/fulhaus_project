@@ -29,7 +29,7 @@ To use the API, you can send a POST request to the /fulhaus_predict/predict/ end
 curl -X POST -H "Content-Type: multipart/form-data" -F "image=@/path/to/image.jpg" http://localhost:8000/fulhaus_predict/predict/
 
 The API will return a JSON response containing the predicted label name, like this:
-
+```json
 {
     "backbonetype": "ObjectDetectionPrediction",
     "backbonepredictions": {
@@ -62,9 +62,9 @@ The API will return a JSON response containing the predicted label name, like th
     },
     "model_id": "e8c71020-c6d0-4262-9b0f-54b6436ae695"
 }
-
-### How to build Docker
+```
+### How to build the Docker
 docker build -t furniture .
 
-### How to run Docker
+### How to run the Docker
 docker run -p 8001:8000 furniture
